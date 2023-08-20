@@ -1,6 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![MIT License][license-shield]][license-url]
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&label=Muhammad%20Ali)](https://linkedin.com/in/zatribune)
 # Overview
 
 * This is an application to showcase how to integrate a spring-boot project with a 3rd party FOREX or Foreign Exchange
@@ -18,7 +15,8 @@ Thanks to [exchangerate.host](https://exchangerate.host/) for providing their fr
 > If you or your company use this project or like what they're doing,
 > please consider backing them, so they can continue maintaining
 > and evolving this wonderful project.
-<p align="center" style="padding:30px;background-color: white">
+
+<p align="center" style="padding:50px;background-color: white">
 <img src="exchangerate.host.svg">
 </p>
 
@@ -80,9 +78,7 @@ Every 5 minutes: `0 */5 * * * *`.
 Every day at 04:00 pm: `0 0 16 * * *`.  
 Every day at 12:05 am: `0 5 0 * * *`.
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/zatribune/forex-example.svg?style=for-the-badge
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&label=Muhammad%20Ali)](https://linkedin.com/in/zatribune)
 [contributors-url]: https://github.com/zatribune/forex-service/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/zatribune/forex-example.svg?style=for-the-badge
 [license-url]: https://github.com/zatribune/forex-example/blob/master/LICENSE.txt
