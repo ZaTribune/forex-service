@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.zatribune.forex.db.entity.TradeRate;
+import com.zatribune.forex.db.entity.TradeRateId;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -23,8 +24,7 @@ class RatesServiceImplTest {
         ObjectNode node=objectMapper.readValue(input,ObjectNode.class);
         Map<String, Double> map = objectMapper.readValue(node.get("rates").traverse(), new TypeReference<>() {});
         List<TradeRate> list=map.entrySet().stream().map(entry->TradeRate.builder()
-                .source("EUR")
-                .destination(entry.getKey())
+                .id(new TradeRateId("EUR",entry.getKey()))
                 .rate(entry.getValue())
                 .build()).collect(Collectors.toList());
         assertFalse(list.isEmpty());
