@@ -78,10 +78,4 @@ Every 5 minutes: `0 */5 * * * *`.
 Every day at 04:00 pm: `0 0 16 * * *`.  
 Every day at 12:05 am: `0 5 0 * * *`.
 
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&label=Muhammad%20Ali)](https://linkedin.com/in/zatribune)
-[contributors-url]: https://github.com/zatribune/forex-service/graphs/contributors
-[license-shield]: https://img.shields.io/github/license/zatribune/forex-example.svg?style=for-the-badge
-[license-url]: https://github.com/zatribune/forex-example/blob/master/LICENSE.txt
-
-
-
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&label=Muhammad%20Ali)(https://linkedin.com/in/zatribune)
