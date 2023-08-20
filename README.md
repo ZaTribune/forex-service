@@ -7,7 +7,8 @@
 * We'll utilize Oracle's `coherence` cache to increase our performance, hence we need to maintain the integrity of our
   records at the same time, so we don't end up utilizing invalid trade rates.
 * Whenever trade rates are refreshed, a batching update for all trade rates will be executed.
-
+* The project consists of two modules; one is [forex-service](forex-service)
+, and the second one is [cache-server](cache-server).
 ## Acknowledgements
 
 Thanks to [exchangerate.host](https://exchangerate.host/) for providing their free FOREX API.

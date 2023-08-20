@@ -1,0 +1,6 @@
+debug: false
+server:
+  port: 7777
+logging:
+  level:
+    com.oracle.coherence: DEBUG
