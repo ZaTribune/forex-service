@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+  oracle:
+    image: gvenzl/oracle-xe:18
+    container_name: forex-oracle
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: Pass@12345
+    networks:
+      - forex-local
+
+networks:
+  forex-local:
+    driver: bridge

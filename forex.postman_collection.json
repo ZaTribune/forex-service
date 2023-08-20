@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "1fee9f3e-9461-4c86-9220-f6ac3057f71a",
+		"name": "forex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14524570",
+		"_collection_link": "https://cloudy-crater-878009.postman.co/workspace/microservices-course~abfc7e2e-b9e4-43cc-9254-079e3b0023a2/collection/14524570-1fee9f3e-9461-4c86-9220-f6ac3057f71a?action=share&source=collection_link&creator=14524570"
+	},
+	"item": [
+		{
+			"name": "refresh",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/rates/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"rates",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/rates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"rates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "convert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"source\":\"EUR\",\r\n    \"destination\":\"AED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7070/rates/convert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"rates",
+						"convert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "metrics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/actuator/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"actuator",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "L2C puts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/actuator/metrics/hibernate.second.level.cache.puts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"metrics",
+						"hibernate.second.level.cache.puts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "L2C hits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/actuator/metrics/hibernate.second.level.cache.requests?tag=result:hit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"actuator",
+						"metrics",
+						"hibernate.second.level.cache.requests"
+					],
+					"query": [
+						{
+							"key": "tag",
+							"value": "result:hit"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "L2C misses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/actuator/metrics/hibernate.second.level.cache.requests?tag=result:miss",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"actuator",
+						"metrics",
+						"hibernate.second.level.cache.requests"
+					],
+					"query": [
+						{
+							"key": "tag",
+							"value": "result:miss"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

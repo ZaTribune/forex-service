@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="91.807999mm"
+   height="9.8777704mm"
+   viewBox="0 0 91.807718 9.8777402"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="933.26605"
+       y="353.94766"
+       width="1038.728"
+       height="238.37291"
+       id="rect2" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-41.725577,-119.39868)">
+    <text
+       xml:space="preserve"
+       style="font-size:9.87777px;line-height:1.25;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, ';stroke-width:0.264583"
+       x="41.281849"
+       y="126.90347"
+       id="text1"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';stroke-width:0.264583"
+         x="41.281849"
+         y="126.90347">exchangerate<tspan
+   style="fill:#f14836;fill-opacity:1"
+   id="tspan2">.</tspan>host</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2"
+       style="font-size:37.3333px;line-height:1.25;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, ';white-space:pre;shape-inside:url(#rect2)" />
+  </g>
+</svg>

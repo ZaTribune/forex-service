@@ -1,0 +1,58 @@
+server:
+  port: 7070
+
+debug: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics
+
+logging:
+  level:
+    com.oracle.coherence: info
+    org.springframework: info
+
+spring:
+  application:
+    name: forex
+  jackson:
+    serialization:
+      indent-output: true
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: forex
+    password: Forex@12345
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.show_sql: true
+      hibernate.use_sql_comments: false
+      hibernate.format_sql: false
+      hibernate.generate_statistics: false
+      hibernate.cache.use_second_level_cache: true
+      hibernate.cache.use_minimal_puts: false
+      hibernate.cache.region.factory_class: com.oracle.coherence.hibernate.cache.v53.CoherenceRegionFactory
+      hibernate.cache.use_query_cache: true
+      hibernate.cache.provider_class: com.tangosol.coherence.hibernate.CoherenceCacheProvider
+      com.oracle.coherence.hibernate.cache.cache_config_file_path: hibernate-second-level-cache-config.xml
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+        show_sql: true
+    open-in-view: false
+
+
+scheduler:
+  enabled: true
+
+org:
+  jobrunr:
+    background-job-server:
+      enabled: true
+    dashboard:
+      enabled: true
+
