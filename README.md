@@ -42,12 +42,12 @@ SELECT * FROM all_users;
 ```sql
 GRANT CONNECT, RESOURCE, DBA TO FOREX;
 ```
-6. The first time you run the application, the exchange cient will load all rates automatically.
+6. The first time you run the application, [ExchangeRateClient](forex-service/src/main/java/com/zatribune/forex/client/ExchangeRateClient.java) will load all rates automatically.
 7. You can look up scheduled tasks on [JobRunr dashboard](http://localhost:8000/dashboard).
 8. Load this [.collections file]() into your postman and enjoy.
 
 ## Guides
-### [Integrating Hibernate and Coherence](https://docs.oracle.com/middleware/12213/coherence/integrate/integrating-hibernate-and-coherence.htm#COHIG378).
+### [Integrating Hibernate and Coherence](https://docs.oracle.com/middleware/12213/coherence/integrate/integrating-hibernate-and-coherence.htm#COHIG378)
 ### Cache Concurrency Strategy on Hibernate
 
 - **READ_ONLY**: Used only for entities that never change (exception is thrown if an attempt to update such an entity is
